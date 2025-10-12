@@ -17,7 +17,7 @@ local Library = {
     DefaultSettings = {
         Name = "Unnamed",
         Color = Color3.new(1, 1, 1),
-        TextSize = 20,
+        TextSize = 17,
         Tag = "DefaultTag",
         ShowTextLabel = true,
         ShowHighlight = true,
@@ -92,7 +92,7 @@ function Library:CreateESP(obj, settings)
     Billboard.Size = UDim2.new(0, 200, 0, 50)
     Billboard.AlwaysOnTop = true
     Billboard.Enabled = true
-    Billboard.StudsOffset = Vector3.new(0, 3, 0)
+    Billboard.StudsOffset = Vector3.new(0, 1, 0)
     Billboard.Parent = ESP.Folder
     ESP.Billboard = Billboard
 
@@ -108,7 +108,7 @@ function Library:CreateESP(obj, settings)
     ESP.Label = Label
 
     local UIStroke = Instance.new("UIStroke", Label)
-    UIStroke.Thickness = 1.5
+    UIStroke.Thickness = 1
     UIStroke.Color = Color3.new(0, 0, 0)
 
     local Highlight = Instance.new("Highlight")
